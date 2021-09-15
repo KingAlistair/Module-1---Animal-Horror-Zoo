@@ -18,6 +18,7 @@ public class Main {
 
         boolean nextTo = false;
 
+        //Does loop once, if nextTo is false, does it again until nexTo is true
         do {
             //Rabbit moves and prints it
             rabbit.moveDownAndRight();

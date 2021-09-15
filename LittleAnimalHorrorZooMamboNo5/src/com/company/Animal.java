@@ -48,6 +48,7 @@ public class Animal {
         System.out.println("I'm the " + name + " and I'm on " + getX() + ", " + getY() + " position.");
     }
 
+    //Method: Prints out ending, snake eats rabbit
     public void printEnding(Animal snake) {
         snake.setX(getX());
         snake.setY(getY());
