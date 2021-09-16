@@ -8,24 +8,27 @@ public class Main {
         Animal rabbit = new Animal("Rabbit", 3, 3);
         Animal snake = new Animal("Snake", 9, 9);
 
-
         //Welcome message
         System.out.println("Welcome to the Animal Horror Zoo Demo!\n");
 
-        //Prints animals starting points
+        //Prints animals starting points and Round 0
+        int round = 0;
+        System.out.println("Round: " + round);
         rabbit.print();
         snake.print();
 
         boolean nextTo = false;
 
-        //Does loop once, if nextTo is false, does it again until nexTo is true
+        //Does loop once, if nextTo is false, 12 does it again until nexTo is true
         do {
-            //Rabbit moves and prints it
+            round++;
+            System.out.println("Round: " + round);
+            //Rabbit moves and print
             rabbit.moveDownAndRight();
 
             //Checks if rabbit and snakes are next to each other, if yes calls printEnding method, sets boolean nextTo to true
             if (snake.getX() - rabbit.getX() == 1) {
-                System.out.println("I'm the rabbit please don't eat me!");
+                System.out.println("I'm the rabbit, please don't eat me!");
                 rabbit.printEnding(snake);
                 nextTo = true;
 
