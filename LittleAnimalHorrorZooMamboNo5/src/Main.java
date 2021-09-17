@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Make rabbit and snake object from Animal class
-        Animal rabbit = new Animal("Rabbit", 3, 3);
+        Animal rabbit = new Animal("Rabbit", 1, 1);
         Animal snake = new Animal("Snake", 9, 9);
 
         //Welcome message
